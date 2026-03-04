@@ -19,8 +19,8 @@ This website is built to:
 
 ## 🛠 Tech Stack
 
-- Frontend: React / Next.js / plain HTML-CSS-JS (update this line)
-- Styling: Tailwind CSS / CSS Modules / Styled Components (update this line)
+- Frontend: React / Next.js / plain HTML-CSS-JS
+- Styling: Tailwind CSS / CSS Modules / Styled Components
 - Deployment: Vercel
 
 ## 🚀 Getting Started (Local Setup)
@@ -30,5 +30,6 @@ This website is built to:
    ```bash
    git clone https://github.com/your-username/your-repo-name.git
    cd your-repo-name
+
 
 
