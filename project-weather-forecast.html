@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherEase — Portfolio Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/page.css">
+    <link rel="stylesheet" href="assets/css/project4.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="Home">
+                <img src="assets/images/logo.png" alt="Kyle Robin Andaya Logo" class="logo">
+                <span class="brand-text">Kyle Robin Andaya</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+            <nav id="site-nav" class="site-nav" aria-label="Primary">
+                <ul class="menu">
+                    <li class="menu-item has-submenu">
+                        <button class="submenu-toggle" aria-haspopup="true" aria-expanded="false">Profile</button>
+                        <ul class="submenu" aria-label="Profile submenu">
+                            <li><a href="education.html">Education</a></li>
+                            <li><a href="experience.html">Experience</a></li>
+                            <li><a href="skills.html">Skills</a></li>
+                            <li><a href="certifications.html">Certifications &amp; Training</a></li>
+                            <li><a href="advocacy.html">Advocacy</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="submenu-toggle" aria-haspopup="true" aria-expanded="false">Portfolio</button>
+                        <ul class="submenu" aria-label="Portfolio submenu">
+                            <li><a href="portfolio.html">All Projects</a></li>
+                            <li><a href="project-supermango.html">SuperMango</a></li>
+                            <li><a href="project-boost.html">Boost</a></li>
+                            <li><a href="project-length-calculator.html">Length Conversion Calculator</a></li>
+                            <li><a href="project-weather-forecast.html" aria-current="page">WeatherEase</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="page-hero">
+            <div class="breadcrumb">
+                <a href="portfolio.html">Portfolio</a> / <span>WeatherEase</span>
+            </div>
+            
+            <h1>WeatherEase</h1>
+            <p class="project-meta">
+                <span class="badge">Desktop App</span>
+                <span class="badge">Python</span>
+                <span class="badge">Tkinter</span>
+                <span class="badge">API Integration</span>
+                <span class="badge status-completed">Completed</span>
+            </p>
+            <p class="hero-description">A desktop weather application built with Python and Tkinter that provides real-time weather information for any city worldwide. Features current conditions, 5-day forecast, and beautiful visual weather icons.</p>
+        </section>
+
+        <div class="content">
+            <aside class="toc" aria-label="Project sections">
+                <h2>On this page</h2>
+                <a href="#overview">Overview</a>
+                <a href="#features">Features</a>
+                <a href="#demo">Live Demo</a>
+            </aside>
+
+            <div class="project-content">
+                <section id="overview" class="section-block">
+                    <h2>Project Overview</h2>
+                    <p>The WeatherEase application is a Python-based desktop app that fetches and displays real-time weather data from the OpenWeatherMap API. It provides users with current weather conditions, temperature, humidity, wind speed, and a 5-day forecast in an intuitive Tkinter GUI.</p>
+                    
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <h3>📅 Completion Date</h3>
+                            <p>October 2024</p>
+                        </div>
+                        <div class="info-card">
+                            <h3>👥 Team Size</h3>
+                            <p>Individual Project</p>
+                        </div>
+                        <div class="info-card">
+                            <h3>🎯 Purpose</h3>
+                            <p>Academic Project</p>
+                        </div>
+                        <div class="info-card">
+                            <h3>📊 Status</h3>
+                            <p>Completed</p>
+                        </div>
+                    </div>
+
+                    <div class="project-highlights">
+                        <h3>Project Philosophy</h3>
+                        <p>This project demonstrates proficiency in Python GUI development, API integration, and data parsing. It showcases the ability to create a practical, user-friendly desktop application that solves a real-world need.</p>
+                    </div>
+                </section>
+
+                <section id="features" class="section-block">
+                    <h2>Key Features & Functions</h2>
+                    
+                    <div class="feature-group">
+                        <div class="feature-item">
+                            <div class="feature-icon">🌤️</div>
+                            <div class="feature-details">
+                                <h3>Current Weather Data</h3>
+                                <ul>
+                                    <li>Real-time temperature in Celsius</li>
+                                    <li>Weather description (sunny, cloudy, rainy, etc.)</li>
+                                    <li>Humidity percentage</li>
+                                    <li>Wind speed information</li>
+                                    <li>Visual weather icons matching conditions</li>
+                                    <li>City name and timestamp</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">📅</div>
+                            <div class="feature-details">
+                                <h3>5-Day Forecast</h3>
+                                <ul>
+                                    <li>Extended weather predictions</li>
+                                    <li>Daily high and low temperatures</li>
+                                    <li>Forecast conditions for planning</li>
+                                    <li>Date-wise weather breakdown</li>
+                                    <li>Scrollable forecast display</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">�</div>
+                            <div class="feature-details">
+                                <h3>City Search</h3>
+                                <ul>
+                                    <li>Search weather for any city worldwide</li>
+                                    <li>Instant results with API integration</li>
+                                    <li>Error handling for invalid cities</li>
+                                    <li>Clean, intuitive search interface</li>
+                                    <li>Quick search functionality</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">🎨</div>
+                            <div class="feature-details">
+                                <h3>User Interface</h3>
+                                <ul>
+                                    <li>Clean Tkinter GUI design</li>
+                                    <li>Organized layout with frames</li>
+                                    <li>Responsive button interactions</li>
+                                    <li>Professional color scheme</li>
+                                    <li>Easy-to-read text labels</li>
+                                    <li>User-friendly navigation</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">�</div>
+                            <div class="feature-details">
+                                <h3>API Integration</h3>
+                                <ul>
+                                    <li>OpenWeatherMap API connection</li>
+                                    <li>JSON data parsing</li>
+                                    <li>HTTP request handling</li>
+                                    <li>Error handling and validation</li>
+                                    <li>Secure API key management</li>
+                                    <li>Data extraction and display</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">⚡</div>
+                            <div class="feature-details">
+                                <h3>Performance & Reliability</h3>
+                                <ul>
+                                    <li>Fast API response times</li>
+                                    <li>Exception handling for network errors</li>
+                                    <li>Input validation</li>
+                                    <li>Graceful error messages</li>
+                                    <li>Stable desktop application</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="demo" class="section-block">
+                    <h2>Application Screenshots</h2>
+                    <p>View WeatherEase application interface showing real-time weather data.</p>
+                    
+                    <!-- PLACEHOLDER: Add your desktop mockup screenshots here -->
+                    <div class="desktop-mockup">
+                        <img src="assets/images/projects/weather-app-screenshot1.png" alt="Weather App Main Interface" class="desktop-screenshot">
+                        <img src="assets/images/projects/weather-app-screenshot2.png" alt="Weather App Forecast View" class="desktop-screenshot">
+                    </div>
+                    
+                    <!-- PLACEHOLDER: Add your video walkthrough here -->
+                    <div class="video-container">
+                        <h3>Video Walkthrough</h3>
+                        <video controls playsinline webkit-playsinline preload="metadata" controlslist="nodownload nofullscreen noremoteplayback" disablepictureinpicture class="demo-video" poster="assets/images/projects/weather-app-video-poster.jpg">
+                            <source src="assets/videos/weather-app-demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p class="video-caption">See the WeatherEase application in action, searching for cities and displaying weather data.</p>
+                    </div>
+                    
+                    <!-- PLACEHOLDER: Add your Python code snippet here -->
+                    <div class="code-section">
+                        <h3>Code Snippet - API Integration</h3>
+                        <p>Here's the core Python code that fetches weather data from the API:</p>
+                        <pre><code class="language-python">
+import tkinter as tk
+from tkinter import messagebox
+import threading
+import requests
+from datetime import datetime, timedelta
+from timezonefinder import TimezoneFinder
+import pytz
+from PIL import Image,ImageTk
+
+# Function to get coordinates (latitude and longitude) from city name
+def get_coordinates(city, api_key):
+    geocoding_url = f"http://api.openweathermap.org/geo/1.0/direct?q={city}&limit=1&appid={api_key}"
+    response = requests.get(geocoding_url)
+    
+    if response.status_code == 200:
+        data = response.json()
+        if data:
+            lat = data[0]['lat']
+            lon = data[0]['lon']
+            return lat, lon
+        else:
+            return None
+    else:
+        return None
+
+# Function to get weather data using coordinates
+def get_weather():
+    city = search.get()
+    if city:
+        api_key = "cb57a3ab8c2e256e264e302a3bf8aa03"
+        coordinates = get_coordinates(city, api_key)
+        
+        if coordinates:
+            lat, lon = coordinates
+            # Get current weather data
+            weather_url = f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={api_key}"
+            weather_response = requests.get(weather_url)
+            
+            # Get 5-day forecast data
+            forecast_url = f"https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={api_key}"
+            forecast_response = requests.get(forecast_url)
+            
+            if weather_response.status_code == 200 and forecast_response.status_code == 200:
+                weather_data = weather_response.json()
+                forecast_data = forecast_response.json()
+                
+                main = weather_data['main']
+                weather = weather_data['weather'][0]
+                temperature = main['temp'] - 273.15
+                kelvin = temperature * 9/5 + 32
+                humidity = main['humidity']
+                wind = weather_data['wind']['speed']
+                description = weather['description']
+                
+                lon = weather_data['coord']['lon']
+                lat = weather_data['coord']['lat']
+                tf = TimezoneFinder()
+                result = tf.timezone_at(lng=lon, lat=lat)
+                home = pytz.timezone(result)
+                local_time = datetime.now(home).strftime("%Y/%m/%d %I:%M:%p")
+                
+                location['text'] = weather_data['name']
+                timelbl['text'] = local_time
+                temperature_lbl['text'] = f"{temperature:.2f}°C"
+                kelvin_lbl['text'] = f"{kelvin:.2f}°F"
+                humidity_lbl['text'] = f"{humidity}%"
+                pressure_lbl['text'] = f"{main['pressure']} hPa"
+                description_lbl['text'] = f"{description.capitalize()}"
+                wind_lbl['text'] = f"{wind} m/s"
+                sunrise_time = datetime.fromtimestamp(weather_data['sys']['sunrise']).strftime('%Y/%m/%d %I:%M:%p')
+                sunset_time = datetime.fromtimestamp(weather_data['sys']['sunset']).strftime('%Y/%m/%d %I:%M:%p')
+                sunrise_lbl['text'] = f"Sunrise: \n{sunrise_time}"
+                sunset_lbl['text'] = f"Sunset: \n{sunset_time}"
+                
+                forecast_info = "5-Day Forecast\n\n"
+                daily_data = {}
+                for entry in forecast_data['list']:
+                    date = entry['dt_txt'].split(" ")[0]
+                    if date not in daily_data:
+                        daily_data[date] = {'temp': [], 'description': []}
+                    daily_data[date]['temp'].append(entry['main']['temp'] - 273.15)
+                    daily_data[date]['description'].append(entry['weather'][0]['description'])
+                
+                forecast_info = ""
+                for i, (date, data) in enumerate(daily_data.items()):
+                    if i >= 5:
+                        break
+                    avg_temp = sum(data['temp']) / len(data['temp'])
+                    description = max(set(data['description']), key=data['description'].count).capitalize()
+                    day_name = (datetime.now() + timedelta(days=i)).strftime("%A")
+                    forecast_info += f"{day_name}: {avg_temp:.2f}°C, {description}\n"
+                
+                forecast_label.config(text=forecast_info)
+            else:
+                messagebox.showerror("Error", "Weather data not found.")
+        else:
+            messagebox.showerror("Error", "City not found.")
+    else:
+        messagebox.showwarning("Input Error", "Please enter a city name.")
+
+def clear():
+    location.config(text="")
+    timelbl.config(text="")
+    temperature_lbl.config(text="")
+    kelvin_lbl.config(text="")
+    humidity_lbl.config(text="")
+    pressure_lbl.config(text="")
+    description_lbl.config(text="")
+    wind_lbl.config(text="")
+    sunrise_lbl.config(text="Sunrise:")
+    sunset_lbl.config(text="Sunset:")
+    forecast_label.config(text="")
+    search.set("")
+
+def exit_app():
+    if messagebox.askyesno("Confirmation", "Are you sure you want to exit?"):
+        root.destroy()
+
+def start_thread(event=0):
+    t1 = threading.Thread(target=get_weather)
+    t1.start()
+
+root = tk.Tk()
+root.title("WeatherEase")
+root.geometry("900x480")
+root.resizable(False, False)
+root.config(bg="#87CEEB")
+
+search = tk.StringVar()
+search_frame = tk.Frame(root, bg="black", bd=2)
+search_frame.place(x=20, y=20, width=300, height=35)
+search_entry = tk.Entry(search_frame, textvariable=search, font=("Verdana", 14, "bold"), width=24, justify="center", relief="flat")
+search_entry.pack(side="left", fill="both", expand=True)
+search_button = tk.Button(root, text="Search", command=start_thread, font=("Verdana", 12, "bold"), bg="#4682B4", fg="white", relief="flat")
+search_button.place(x=325, y=20, width=60, height=35)
+root.bind("<Return>", start_thread)
+
+# Current weather
+current_weather_label = tk.Label(root, text="Current Weather:", font=("Verdana", 14, "bold"), fg="#f0341f", bg="#87CEEB")
+current_weather_label.place(x=670, y=7)
+
+img2=Image.open(r'Icons/location.png')
+resizeimg2=img2.resize((20,20))
+finalimg2=ImageTk.PhotoImage(resizeimg2)
+tk.Label(image=finalimg2, bg="#87CEEB").place(x=670,y=36)
+
+# Location and time
+location = tk.Label(root, text="", font=("Verdana", 13), bg="#87CEEB")
+location.place(x=695, y=34)
+timelbl = tk.Label(root, text="", font=("Verdana", 14), bg="#87CEEB")
+timelbl.place(x=670, y=60)
+
+# Temperature and feels like
+temperature_lbl = tk.Label(root, text="", font=("Verdana", 55, "bold"), bg="#87CEEB")
+temperature_lbl.place(x=290, y=140)
+kelvin_lbl = tk.Label(root, text="", font=("Verdana", 16, "bold"), bg="#87CEEB")
+kelvin_lbl.place(x=290, y=240)
+
+#weather logo
+img3=Image.open(r"Icons/cloudy.png")
+resizeimg3=img3.resize((190,190))
+finalimg3=ImageTk.PhotoImage(resizeimg3)
+icons=tk.Label(image=finalimg3,bg="#87CEEB")
+icons.place(x=60,y=110)
+
+# sunrise logo
+finalimg4=ImageTk.PhotoImage(image=Image.open(r"Icons/sunrise.png").resize((40,40)))
+tk.Label(image=finalimg4, bg="#87CEEB").place(x=647,y=150)
+#sunset logo
+finalimg5=ImageTk.PhotoImage(image=Image.open(r"Icons/sunset.png").resize((40,40)))
+tk.Label(image=finalimg5, bg="#87CEEB").place(x=647,y=205)
+
+# Sunrise and sunset
+sunrise_lbl = tk.Label(root, text="Sunrise:", font=("Verdana", 11, "bold"), bg="#87CEEB")
+sunrise_lbl.place(x=690, y=155)
+sunset_lbl = tk.Label(root, text="Sunset:", font=("Verdana", 11, "bold"), bg="#87CEEB")
+sunset_lbl.place(x=690, y=210)
+
+# Weather details
+humidity_lbl = tk.Label(root, text="", font=("Verdana", 15, "bold"), bg="#87CEEB")
+humidity_lbl.place(x=65, y=357)
+wind_lbl = tk.Label(root, text="", font=("Verdana", 15, "bold"), bg="#87CEEB")
+wind_lbl.place(x=260, y=357)
+description_lbl = tk.Label(root, text="", font=("Verdana", 15, "bold"), bg="#87CEEB")
+description_lbl.place(x=480, y=357)
+pressure_lbl = tk.Label(root, text="", font=("Verdana", 15, "bold"), bg="#87CEEB")
+pressure_lbl.place(x=760, y=357)
+
+# placing the labels
+tk.Label(text="Humidity",font="Verdana 15 bold",bg='#87CEEB',fg='white').place(x=50, y=331)
+tk.Label(text="Wind",font="Verdana 15 bold",bg='#87CEEB',fg='white').place(x=260, y=331)
+tk.Label(text="Description",font="Verdana 15 bold",bg='#87CEEB',fg='white').place(x=480, y=331)
+tk.Label(text="Pressure",font="Verdana 15 bold",bg='#87CEEB',fg='white').place(x=750, y=331)
+
+# 5-day forecast
+forecast_label = tk.Label(root, text="", font=("Helvetica", 11, "bold"), bg="#87CEEB", justify="left", wraplength=450)
+forecast_label.pack(padx=0)
+forecast_label.place(x=400, y=7)
+
+# Exit and reset buttons
+exit_button = tk.Button(root, text="Exit", font=("Verdana", 16, "bold"), bg="#15719f", fg="white", width=7, relief="groove", command=exit_app)
+exit_button.place(x=780, y=420)
+reset_button = tk.Button(root, text="Reset", font=("Verdana", 16, "bold"), bg="#15719f", fg="white", width=7, relief="groove", command=clear)
+reset_button.place(x=10, y=420)
+
+root.mainloop()
+                        </code></pre>
+                    </div>
+                </section>
+
+                <div class="project-navigation">
+                    <a href="project-length-calculator.html" class="nav-btn">← Previous: Length Calculator</a>
+                    <a href="portfolio.html" class="nav-btn">Back to Portfolio</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer" id="contact">
+        <div class="container footer-inner">
+            <div class="footer-info">
+                <img src="assets/images/logo.png" alt="Kyle Robin Andaya Logo" class="logo">
+                <p>&copy; <span id="year"></span> Kyle Robin Andaya. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <a href="mailto:kylesemingandaya@gmail.com" class="text-link">kylesemingandaya@gmail.com</a>
+                <a href="https://www.linkedin.com/in/kyle-andaya-732337293" target="_blank" rel="noopener" class="text-link">LinkedIn</a>
+                <a href="https://github.com/Archaii" target="_blank" rel="noopener" class="text-link">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/project4.js"></script>
+</body>
+</html>

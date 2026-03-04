@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Profile — Certifications & Training</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/page.css">
+    <link rel="stylesheet" href="assets/css/certifications.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="Home">
+                <img src="assets/images/logo.png" alt="Kyle Robin Andaya Logo" class="logo">
+                <span class="brand-text">Kyle Robin Andaya</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+            <nav id="site-nav" class="site-nav" aria-label="Primary">
+                <ul class="menu">
+                    <li class="menu-item has-submenu">
+                        <button class="submenu-toggle" aria-haspopup="true" aria-expanded="false">Profile</button>
+                        <ul class="submenu" aria-label="Profile submenu">
+                            <li><a href="education.html">Education</a></li>
+                            <li><a href="experience.html">Experience</a></li>
+                            <li><a href="skills.html">Skills</a></li>
+                            <li><a href="certifications.html" aria-current="page">Certifications &amp; Training</a></li>
+                            <li><a href="advocacy.html">Advocacy</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="submenu-toggle" aria-haspopup="true" aria-expanded="false">Portfolio</button>
+                        <ul class="submenu" aria-label="Portfolio submenu">
+                            <li><a href="portfolio.html">All Projects</a></li>
+                            <li><a href="project-supermango.html">SuperMango</a></li>
+                            <li><a href="project-boost.html">Boost</a></li>
+                            <li><a href="project-length-calculator.html">Length Conversion Calculator</a></li>
+                            <li><a href="project-weather-forecast.html">WeatherEase</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="page-hero">
+            <h1>Certifications & Training</h1>
+            <p>Credentials and professional development.</p>
+        </section>
+
+        <div class="content">
+            <aside class="toc" aria-label="Certifications page table of contents">
+                <h2>Sections</h2>
+                <a href="#professional-certs">Professional Certifications</a>
+                <a href="#participation">Participation Certificates</a>
+                <a href="#memberships">Memberships</a>
+            </aside>
+
+            <div>
+                <section id="professional-certs" class="section-block">
+                    <h2>Professional Certifications</h2>
+                    <div class="cert-gallery">
+                        <div class="cert-item" data-cert="python">
+                            <div class="cert-preview">
+                                <img src="assets/images/certificates/python-cert.jpg" alt="IT Specialist - Python Certificate" class="cert-image">
+                                <div class="cert-overlay">
+                                    <button class="view-cert-btn" onclick="openCertModal('python')">View Certificate</button>
+                                </div>
+                            </div>
+                            <div class="cert-info">
+                                <h3>IT Specialist - Python</h3>
+                                <p class="meta">Certiport • July 14, 2024</p>
+                                <p>Certified in Python programming fundamentals and best practices.</p>
+                            </div>
+                        </div>
+
+                        <div class="cert-item" data-cert="cisco">
+                            <div class="cert-preview">
+                                <img src="assets/images/certificates/cisco-cert.jpg" alt="DevNet Associate Certificate" class="cert-image">
+                                <div class="cert-overlay">
+                                    <button class="view-cert-btn" onclick="openCertModal('cisco')">View Certificate</button>
+                                </div>
+                            </div>
+                            <div class="cert-info">
+                                <h3>DevNet Associate</h3>
+                                <p class="meta">Cisco • January 15, 2025</p>
+                                <p>Network automation and programmability certification from Cisco.</p>
+                            </div>
+                        </div>
+
+                        <div class="cert-item" data-cert="pmi">
+                            <div class="cert-preview">
+                                <img src="assets/images/certificates/pmi-cert.jpg" alt="PMI Project Management Ready Certificate" class="cert-image">
+                                <div class="cert-overlay">
+                                    <button class="view-cert-btn" onclick="openCertModal('pmi')">View Certificate</button>
+                                </div>
+                            </div>
+                            <div class="cert-info">
+                                <h3>PMI Project Management Ready</h3>
+                                <p class="meta">Project Management Institute • March 20, 2025</p>
+                                <p>Foundational project management methodologies and business analysis.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="participation" class="section-block">
+                    <h2>Participation Certificates</h2>
+                    <div class="cert-gallery">
+                        <div class="cert-item" data-cert="techup">
+                            <div class="cert-preview">
+                                <img src="assets/images/certificates/techup-cert.jpg" alt="TechUP Innovation Challenge Certificate" class="cert-image">
+                                <div class="cert-overlay">
+                                    <button class="view-cert-btn" onclick="openCertModal('techup')">View Certificate</button>
+                                </div>
+                            </div>
+                            <div class="cert-info">
+                                <h3>TechUP Inter-University Innovation Challenge</h3>
+                                <p class="meta">PhilDev Foundation • June 28, 2024</p>
+                                <p>Active participation in inter-university innovation challenge.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="memberships" class="section-block">
+                    <h2>Professional Memberships</h2>
+                    <div class="cert-gallery">
+                        <div class="cert-item" data-cert="acm">
+                            <div class="cert-preview">
+                                <img src="assets/images/certificates/acm-membership.jpg" alt="FEU Tech ACM Student Chapter Membership" class="cert-image">
+                                <div class="cert-overlay">
+                                    <button class="view-cert-btn" onclick="openCertModal('acm')">View Certificate</button>
+                                </div>
+                            </div>
+                            <div class="cert-info">
+                                <h3>FEU Tech ACM Student Chapter</h3>
+                                <p class="meta">Association for Computing Machinery • 2023-2024</p>
+                                <p>Certified member of the ACM student chapter at FEU Institute of Technology.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer" id="contact">
+        <div class="container footer-inner">
+            <div class="footer-info">
+                <img src="assets/images/logo.png" alt="Kyle Robin Andaya Logo" class="logo">
+                <p>&copy; <span id="year"></span> Kyle Robin Andaya. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <a href="mailto:kylesemingandaya@gmail.com" class="text-link">kylesemingandaya@gmail.com</a>
+                <a href="https://www.linkedin.com/in/kyle-andaya-732337293" target="_blank" rel="noopener" class="text-link">LinkedIn</a>
+                <a href="https://github.com/Archaii" target="_blank" rel="noopener" class="text-link">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Certificate Modal -->
+    <div id="certModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCertModal()">&times;</span>
+            <img id="modalImage" src="" alt="Certificate" class="modal-cert-image">
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/certifications.js"></script>
+</body>
+</html>
+
+

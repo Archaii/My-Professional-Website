@@ -1,0 +1,78 @@
+/* Page-specific tweaks for index */
+.hero .btn.primary { box-shadow: 0 10px 24px rgba(37,99,235,0.35); }
+.hero .btn.ghost { border-color: rgba(229,231,235,0.12); }
+
+/* Hero profile layout */
+.hero-profile { display: flex; gap: 32px; align-items: flex-start; }
+.profile-image { 
+  width: 180px; 
+  height: 180px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+  border: 4px solid var(--accent); 
+  box-shadow: 0 8px 32px rgba(34, 211, 238, 0.3);
+  flex-shrink: 0;
+}
+.hero-text { flex: 1; }
+
+@media (max-width: 960px) {
+  .hero-profile { gap: 24px; }
+  .profile-image { width: 150px; height: 150px; }
+}
+
+@media (max-width: 760px) {
+  .hero-profile { flex-direction: column; text-align: center; align-items: center; }
+  .profile-image { width: 140px; height: 140px; }
+}
+
+/* Contact Section */
+.contact-form { margin: 24px 0; }
+.form-group { margin-bottom: 16px; }
+.form-group label { display: block; margin-bottom: 6px; font-weight: 500; color: var(--text); }
+.form-group input, .form-group textarea { 
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid var(--border); 
+  border-radius: 8px; 
+  background: var(--panel-2); 
+  color: var(--text); 
+  font: inherit;
+  transition: border-color 0.2s ease;
+}
+.form-group input:focus, .form-group textarea:focus { 
+  outline: none; 
+  border-color: var(--accent); 
+}
+.form-group textarea { resize: vertical; min-height: 120px; }
+
+.contact-links { margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--border); }
+.contact-links h3 { margin: 0 0 16px; font-size: 18px; }
+.social-links { display: flex; gap: 16px; flex-wrap: wrap; }
+.social-link { 
+  display: flex; 
+  align-items: center; 
+  gap: 8px; 
+  padding: 12px 16px; 
+  border: 1px solid var(--border); 
+  border-radius: 10px; 
+  background: var(--panel-2); 
+  color: var(--text); 
+  text-decoration: none; 
+  transition: all 0.2s ease;
+}
+.social-link:hover { 
+  background: var(--panel); 
+  border-color: var(--accent); 
+  transform: translateY(-2px);
+}
+.social-icon { width: 20px; height: 20px; }
+.social-link.github:hover { color: #f0f6fc; }
+.social-link.linkedin:hover { color: #0077b5; }
+.social-link.email:hover { color: var(--accent); }
+
+@media (max-width: 760px) {
+  .social-links { flex-direction: column; }
+  .social-link { justify-content: center; }
+}
+
+

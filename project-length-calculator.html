@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Length Conversion Calculator — Portfolio Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/page.css">
+    <link rel="stylesheet" href="assets/css/project3.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="Home">
+                <img src="assets/images/logo.png" alt="Kyle Robin Andaya Logo" class="logo">
+                <span class="brand-text">Kyle Robin Andaya</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+            <nav id="site-nav" class="site-nav" aria-label="Primary">
+                <ul class="menu">
+                    <li class="menu-item has-submenu">
+                        <button class="submenu-toggle" aria-haspopup="true" aria-expanded="false">Profile</button>
+                        <ul class="submenu" aria-label="Profile submenu">
+                            <li><a href="education.html">Education</a></li>
+                            <li><a href="experience.html">Experience</a></li>
+                            <li><a href="skills.html">Skills</a></li>
+                            <li><a href="certifications.html">Certifications &amp; Training</a></li>
+                            <li><a href="advocacy.html">Advocacy</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item has-submenu">
+                        <button class="submenu-toggle" aria-haspopup="true" aria-expanded="false">Portfolio</button>
+                        <ul class="submenu" aria-label="Portfolio submenu">
+                            <li><a href="portfolio.html">All Projects</a></li>
+                            <li><a href="project-supermango.html">SuperMango</a></li>
+                            <li><a href="project-boost.html">Boost</a></li>
+                            <li><a href="project-length-calculator.html" aria-current="page">Length Conversion Calculator</a></li>
+                                                        <li><a href="project-weather-forecast.html">WeatherEase</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="page-hero">
+            <div class="breadcrumb">
+                <a href="portfolio.html">Portfolio</a> / <span>Length Conversion Calculator</span>
+            </div>
+            
+            <h1>Length Conversion Calculator</h1>
+            <p class="project-meta">
+                <span class="badge">Web App</span>
+                <span class="badge">PHP</span>
+                <span class="badge">HTML/CSS</span>
+                <span class="badge status-completed">Completed</span>
+            </p>
+            <p class="hero-description">A user-friendly web-based calculator that converts between various length units including meters, feet, inches, centimeters, kilometers, and miles. Built with PHP for server-side processing and clean, responsive design.</p>
+        </section>
+
+        <div class="content">
+            <aside class="toc" aria-label="Project sections">
+                <h2>On this page</h2>
+                <a href="#overview">Overview</a>
+                <a href="#features">Features</a>
+                <a href="#mockup">UI Mockup</a>
+            </aside>
+
+            <div class="project-content">
+                <section id="overview" class="section-block">
+                    <h2>Project Overview</h2>
+                    <p>The Length Conversion Calculator is a practical web application designed to simplify unit conversions for students, engineers, and anyone needing quick length conversions. It provides accurate, instant conversions between multiple length units with a clean, intuitive interface.</p>
+                    
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <h3>📅 Completion Date</h3>
+                            <p>September 2024</p>
+                        </div>
+                        <div class="info-card">
+                            <h3>⏱️ Duration</h3>
+                            <p>2 weeks</p>
+                        </div>
+                        <div class="info-card">
+                            <h3>🎯 Purpose</h3>
+                            <p>Academic Project</p>
+                        </div>
+                        <div class="info-card">
+                            <h3>👥 Team</h3>
+                            <p>Individual Project</p>
+                        </div>
+                    </div>
+
+                    <div class="project-highlights">
+                        <h3>Project Motivation</h3>
+                        <p>This project was created as part of my PHP programming course to demonstrate server-side processing and form handling. It showcases clean code practices, input validation, and responsive design principles.</p>
+                    </div>
+                </section>
+
+                <section id="features" class="section-block">
+                    <h2>Features</h2>
+                    
+                    <div class="feature-group">
+                        <div class="feature-item">
+                            <div class="feature-icon">�</div>
+                            <div class="feature-details">
+                                <h3>Multiple Unit Support</h3>
+                                <ul>
+                                    <li>Meters, kilometers, centimeters, millimeters</li>
+                                    <li>Feet, inches, yards, miles</li>
+                                    <li>Accurate conversion formulas</li>
+                                    <li>Support for decimal values</li>
+                                    <li>Bi-directional conversions</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">⚡</div>
+                            <div class="feature-details">
+                                <h3>Real-time Calculation</h3>
+                                <ul>
+                                    <li>Instant conversion results</li>
+                                    <li>Server-side PHP processing</li>
+                                    <li>High precision calculations</li>
+                                    <li>Error handling and validation</li>
+                                    <li>User-friendly feedback</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">🎨</div>
+                            <div class="feature-details">
+                                <h3>Clean Web Interface</h3>
+                                <ul>
+                                    <li>Responsive design for all devices</li>
+                                    <li>Intuitive input fields</li>
+                                    <li>Clear unit selection dropdowns</li>
+                                    <li>Easy-to-read results display</li>
+                                    <li>Attempt limits and retake policies</li>
+                                    <li>Modern, minimalist design</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">✅</div>
+                            <div class="feature-details">
+                                <h3>Input Validation</h3>
+                                <ul>
+                                    <li>Validates numeric input</li>
+                                    <li>Handles edge cases gracefully</li>
+                                    <li>Prevents invalid conversions</li>
+                                    <li>Clear error messages</li>
+                                    <li>Sanitized user input</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">�</div>
+                            <div class="feature-details">
+                                <h3>Cross-Platform Compatibility</h3>
+                                <ul>
+                                    <li>Works on all modern browsers</li>
+                                    <li>Responsive mobile design</li>
+                                    <li>Desktop and tablet optimized</li>
+                                    <li>Fast loading times</li>
+                                    <li>No JavaScript required</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">�</div>
+                            <div class="feature-details">
+                                <h3>Reliable & Secure</h3>
+                                <ul>
+                                    <li>Server-side processing for accuracy</li>
+                                    <li>No data collection or storage</li>
+                                    <li>Privacy-focused design</li>
+                                    <li>Clean PHP code architecture</li>
+                                    <li>Well-documented codebase</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="mockup" class="section-block">
+                    <h2>Application Screenshots</h2>
+                    <p>View the clean, user-friendly interface of the Length Conversion Calculator.</p>
+                    
+                    <!-- PLACEHOLDER: Add your desktop mockup screenshots here -->
+                    <div class="desktop-mockup">
+                        <img src="assets/images/projects/length-calc-screenshot1.png" alt="Length Calculator Main Interface" class="desktop-screenshot">
+                        <img src="assets/images/projects/length-calc-screenshot2.png" alt="Length Calculator Conversion Results" class="desktop-screenshot">
+                    </div>
+                    
+                    <!-- PLACEHOLDER: Add your video walkthrough here -->
+                    <div class="video-container">
+                        <h3>Video Walkthrough</h3>
+                        <video controls playsinline webkit-playsinline preload="metadata" controlslist="nodownload nofullscreen noremoteplayback" disablepictureinpicture class="demo-video" poster="assets/images/projects/length-calc-video-poster.jpg">
+                            <source src="assets/videos/length-calc-demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p class="video-caption">See the Length Conversion Calculator in action.</p>
+                    </div>
+                    
+                    <!-- PLACEHOLDER: Add your PHP code snippet here -->
+                    <div class="code-section">
+                        <h3>Code Snippet - Conversion Logic</h3>
+                        <p>Here's the core PHP function that handles length conversions:</p>
+                        <pre><code class="language-php">
+&lt;?php
+function convertLength($value, $fromUnit, $toUnit) {
+    // Conversion rates to meters (base unit)
+    $toMeters = [
+        'meter' => 1,
+        'kilometer' => 1000,
+        'centimeter' => 0.01,
+        'millimeter' => 0.001,
+        'mile' => 1609.34,
+        'yard' => 0.9144,
+        'foot' => 0.3048,
+        'inch' => 0.0254
+    ];
+    
+    // Convert to meters first, then to target unit
+    $meters = $value * $toMeters[$fromUnit];
+    $result = $meters / $toMeters[$toUnit];
+    
+    return round($result, 4);
+}
+?&gt;
+                        </code></pre>
+                    </div>
+                    
+                </section>
+
+                <div class="project-navigation">
+                    <a href="project-boost.html" class="nav-btn">← Previous: Boost</a>
+                    <a href="project-weather-forecast.html" class="nav-btn">Next: WeatherEase →</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer" id="contact">
+        <div class="container footer-inner">
+            <div class="footer-info">
+                <img src="assets/images/logo.png" alt="Kyle Robin Andaya Logo" class="logo">
+                <p>&copy; <span id="year"></span> Kyle Robin Andaya. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <a href="mailto:kylesemingandaya@gmail.com" class="text-link">kylesemingandaya@gmail.com</a>
+                <a href="https://www.linkedin.com/in/kyle-andaya-732337293" target="_blank" rel="noopener" class="text-link">LinkedIn</a>
+                <a href="https://github.com/Archaii" target="_blank" rel="noopener" class="text-link">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/project3.js"></script>
+</body>
+</html>

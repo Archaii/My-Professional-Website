@@ -1,0 +1,387 @@
+/* Project 4: Task Management App - Specific Styles */
+
+/* Extends project1.css base styles with task management specific additions */
+
+/* Task App Demo */
+.task-app-demo {
+    background: var(--panel-2);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px;
+    margin: 24px 0;
+}
+
+.demo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.demo-header h3 {
+    margin: 0;
+    color: var(--text);
+    font-size: 24px;
+}
+
+.demo-controls {
+    display: flex;
+    gap: 12px;
+}
+
+.demo-add-btn {
+    padding: 10px 20px;
+    background: var(--brand);
+    color: #0b0f18;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.demo-add-btn:hover {
+    opacity: 0.9;
+}
+
+.demo-filter {
+    padding: 10px 16px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.demo-filter:focus {
+    outline: none;
+    border-color: var(--brand);
+}
+
+/* Task Columns */
+.task-categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.task-column {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px;
+    min-height: 400px;
+}
+
+.task-column h4 {
+    margin: 0 0 16px;
+    color: var(--text);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.task-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 24px;
+    height: 24px;
+    padding: 0 8px;
+    background: var(--panel);
+    border-radius: 12px;
+    font-size: 12px;
+    color: var(--muted);
+}
+
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Task Cards */
+.task-card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px;
+    cursor: move;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.task-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.task-card.completed {
+    opacity: 0.6;
+}
+
+.task-card.completed .task-title {
+    text-decoration: line-through;
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.task-checkbox {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.priority-badge {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.priority-badge.high {
+    background: rgba(239, 68, 68, 0.15);
+    color: var(--danger);
+    border: 1px solid var(--danger);
+}
+
+.priority-badge.medium {
+    background: rgba(245, 158, 11, 0.15);
+    color: var(--warning);
+    border: 1px solid var(--warning);
+}
+
+.priority-badge.low {
+    background: rgba(16, 185, 129, 0.15);
+    color: var(--success);
+    border: 1px solid var(--success);
+}
+
+.task-title {
+    margin: 0 0 6px;
+    color: var(--text);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.task-desc {
+    margin: 0 0 10px;
+    color: var(--subtle);
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.task-meta {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.task-date {
+    font-size: 12px;
+    color: var(--muted);
+}
+
+.task-tag {
+    padding: 3px 8px;
+    background: var(--panel-2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    font-size: 11px;
+    color: var(--muted);
+}
+
+/* Demo Stats */
+.demo-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-value {
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 4px;
+}
+
+.stat-label {
+    display: block;
+    font-size: 12px;
+    color: var(--subtle);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Updates Section */
+.updates-section {
+    margin: 24px 0;
+}
+
+.updates-section h3 {
+    margin: 0 0 16px;
+    color: var(--accent);
+    font-size: 18px;
+}
+
+.update-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.update-list li {
+    padding: 12px 16px;
+    background: var(--panel-2);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 8px;
+    margin: 8px 0;
+    color: var(--text);
+    font-size: 14px;
+}
+
+.update-list li strong {
+    color: var(--muted);
+}
+
+/* Lessons Grid */
+.lessons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+    margin: 24px 0;
+}
+
+.lesson-card {
+    background: var(--panel-2);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.lesson-card h3 {
+    margin: 0 0 12px;
+    color: var(--accent);
+    font-size: 18px;
+}
+
+.lesson-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lesson-card li {
+    padding: 8px 0 8px 20px;
+    color: var(--text);
+    font-size: 14px;
+    position: relative;
+}
+
+.lesson-card li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: 700;
+}
+
+/* Drag State Styles */
+.task-card.dragging {
+    opacity: 0.5;
+    transform: rotate(2deg);
+}
+
+.task-column.drag-over {
+    background: rgba(59, 130, 246, 0.1);
+    border-color: var(--brand);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .task-categories {
+        grid-template-columns: 1fr;
+    }
+
+    .task-column {
+        min-height: 200px;
+    }
+
+    .demo-stats {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .stat-item {
+        padding: 12px;
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .demo-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .demo-controls {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .demo-add-btn,
+    .demo-filter {
+        width: 100%;
+    }
+
+    .lessons-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Animation for new tasks */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.task-card {
+    animation: slideIn 0.3s ease;
+}
+
+/* Hover effect for draggable items */
+.task-card[draggable="true"] {
+    cursor: grab;
+}
+
+.task-card[draggable="true"]:active {
+    cursor: grabbing;
+}

@@ -1,0 +1,7 @@
+.grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.chip { display: inline-block; padding: 8px 10px; border-radius: 999px; border: 1px solid var(--border); background: var(--panel-2); }
+@media (max-width: 760px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+

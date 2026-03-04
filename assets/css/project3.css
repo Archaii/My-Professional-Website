@@ -1,0 +1,422 @@
+/* Project 3: E-Learning Platform - Specific Styles */
+
+/* Extends project1.css base styles with e-learning specific additions */
+
+/* UI Mockup Styles */
+.mockup-container {
+    margin: 24px 0;
+}
+
+.mockup-browser {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.browser-header {
+    background: var(--panel-2);
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.browser-dots {
+    display: flex;
+    gap: 6px;
+}
+
+.browser-dots span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--border);
+}
+
+.browser-dots span:nth-child(1) {
+    background: #ef4444;
+}
+
+.browser-dots span:nth-child(2) {
+    background: #f59e0b;
+}
+
+.browser-dots span:nth-child(3) {
+    background: #10b981;
+}
+
+.browser-title {
+    color: var(--subtle);
+    font-size: 13px;
+}
+
+.mockup-content {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    min-height: 400px;
+}
+
+.mockup-sidebar {
+    background: var(--panel);
+    border-right: 1px solid var(--border);
+    padding: 20px 0;
+}
+
+.sidebar-item {
+    padding: 12px 20px;
+    color: var(--text);
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.sidebar-item:hover {
+    background: var(--panel-2);
+}
+
+.sidebar-item.active {
+    background: var(--panel-2);
+    border-left: 3px solid var(--accent);
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.mockup-main {
+    padding: 24px;
+}
+
+.mockup-welcome {
+    margin-bottom: 24px;
+}
+
+.mockup-welcome h3 {
+    margin: 0 0 8px;
+    color: var(--text);
+    font-size: 24px;
+}
+
+.mockup-welcome p {
+    margin: 0;
+    color: var(--subtle);
+}
+
+.mockup-courses {
+    display: grid;
+    gap: 16px;
+}
+
+.course-card-mock {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 16px;
+    padding: 16px;
+    background: var(--panel-2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+
+.course-card-mock:hover {
+    transform: translateX(4px);
+}
+
+.course-thumb {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--brand), var(--accent));
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0b0f18;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.course-info h4 {
+    margin: 0 0 8px;
+    color: var(--text);
+    font-size: 16px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: var(--panel);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 6px;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--brand), var(--accent));
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+.course-info p {
+    margin: 0;
+    color: var(--subtle);
+    font-size: 13px;
+}
+
+/* Architecture Diagram */
+.architecture-diagram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 32px;
+    background: var(--panel-2);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    margin: 24px 0;
+}
+
+.arch-layer {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.arch-layer h4 {
+    margin: 0 0 12px;
+    color: var(--accent);
+    font-size: 16px;
+}
+
+.arch-components {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.arch-components span {
+    padding: 6px 12px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text);
+}
+
+.arch-arrow {
+    font-size: 24px;
+    color: var(--accent);
+}
+
+/* Modules Grid */
+.modules-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+    margin: 24px 0;
+}
+
+.module-card {
+    background: var(--panel-2);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.2s ease;
+}
+
+.module-card:hover {
+    transform: translateY(-2px);
+}
+
+.module-card h3 {
+    margin: 0 0 12px;
+    color: var(--accent);
+    font-size: 18px;
+}
+
+.module-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.module-card li {
+    padding: 8px 0;
+    color: var(--text);
+    font-size: 14px;
+    border-bottom: 1px solid var(--border);
+}
+
+.module-card li:last-child {
+    border-bottom: none;
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    margin: 24px 0;
+    padding-left: 40px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 12px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--brand), var(--accent));
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -34px;
+    top: 6px;
+    width: 16px;
+    height: 16px;
+    background: var(--brand);
+    border: 3px solid var(--bg);
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px var(--border);
+}
+
+.timeline-date {
+    color: var(--muted);
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
+
+.timeline-content {
+    background: var(--panel-2);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.timeline-content h3 {
+    margin: 0 0 12px;
+    color: var(--accent);
+    font-size: 18px;
+}
+
+.timeline-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-content li {
+    padding: 6px 0;
+    color: var(--text);
+    font-size: 14px;
+}
+
+/* Outcomes Grid */
+.outcomes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+    margin: 24px 0;
+}
+
+.outcome-card {
+    background: var(--panel-2);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.outcome-card h3 {
+    margin: 0 0 12px;
+    color: var(--accent);
+    font-size: 18px;
+}
+
+.outcome-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.outcome-card li {
+    padding: 8px 0 8px 24px;
+    color: var(--text);
+    font-size: 14px;
+    position: relative;
+}
+
+.outcome-card li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+}
+
+/* Code Structure Display */
+.code-structure {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+}
+
+.code-structure pre {
+    margin: 0;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    color: var(--text);
+    line-height: 1.6;
+    overflow-x: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .mockup-content {
+        grid-template-columns: 1fr;
+    }
+
+    .mockup-sidebar {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .architecture-diagram {
+        padding: 20px;
+    }
+
+    .modules-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .outcomes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline {
+        padding-left: 32px;
+    }
+
+    .timeline::before {
+        left: 8px;
+    }
+
+    .timeline-item::before {
+        left: -30px;
+    }
+}

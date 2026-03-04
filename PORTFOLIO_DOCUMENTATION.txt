@@ -1,0 +1,949 @@
+================================================================================
+    PROFESSIONAL PORTFOLIO - USER INTERFACE & NAVIGATION DOCUMENTATION
+================================================================================
+Developer: Kyle Robin Andaya
+Portfolio Website: Professional Profile Portfolio
+Focus: Portfolio Section Documentation
+Last Updated: November 16, 2025
+
+================================================================================
+TABLE OF CONTENTS
+================================================================================
+1. OVERVIEW
+2. NAVIGATION STRUCTURE
+3. MAIN PORTFOLIO PAGE
+4. PROJECT PAGES
+   4.1 SuperMango: AI-Powered Severity Classification Tool
+   4.2 Boost: Career Roadmap Generator
+   4.3 Length Conversion Calculator
+   4.4 WeatherEase: Desktop Weather Application
+5. USER INTERFACE COMPONENTS
+6. MENU & SUBMENU INTERACTIONS
+
+================================================================================
+1. OVERVIEW
+================================================================================
+The Professional Portfolio is a comprehensive showcase of IT projects 
+demonstrating diverse technologies and problem-solving approaches. The 
+portfolio consists of one main landing page (portfolio.html) and four 
+detailed project pages, each featuring complete project descriptions, 
+features, technical specifications, and interactive demonstrations.
+
+Total Projects: 4
+Status: All Completed
+Technologies: AI/ML, Mobile Development, Web Development, Desktop Applications
+Primary Focus: Software Engineering, Computer Vision, API Integration
+
+================================================================================
+2. NAVIGATION STRUCTURE
+================================================================================
+
+HEADER NAVIGATION (Present on all portfolio pages)
+---------------------------------------------------
+Location: Top of every page
+Components:
+  - Brand/Logo: "Kyle Robin Andaya" (Links to index.html homepage)
+  - Navigation Toggle Button (Mobile menu hamburger icon)
+  - Main Navigation Menu
+
+MAIN MENU ITEMS:
+----------------
+1. Profile (Dropdown submenu)
+   Purpose: Access personal/professional information pages
+   Submenu Items:
+   - Education → education.html
+   - Experience → experience.html
+   - Skills → skills.html
+   - Certifications & Training → certifications.html
+   - Advocacy → advocacy.html
+
+2. Portfolio (Dropdown submenu) ⭐ PRIMARY FOCUS
+   Purpose: Navigate between portfolio overview and individual projects
+   Submenu Items:
+   - All Projects → portfolio.html (Main portfolio landing page)
+   - SuperMango → project-supermango.html
+   - Boost → project-boost.html
+   - Length Conversion Calculator → project-length-calculator.html
+   - WeatherEase → project-weather-forecast.html
+
+3. Contact (Direct link)
+   Purpose: Navigate to contact section
+   Action: Scrolls to #contact section on homepage (index.html#contact)
+
+SUBMENU BEHAVIOR:
+-----------------
+- Click submenu toggle button to expand/collapse dropdown
+- Aria attributes indicate current page (aria-current="page")
+- Hover effects provide visual feedback
+- Mobile responsive with hamburger toggle
+
+================================================================================
+3. MAIN PORTFOLIO PAGE (portfolio.html)
+================================================================================
+
+PAGE TITLE: "Portfolio"
+Page Description: "Explore my IT projects and systems showcasing diverse 
+technologies and problem-solving approaches. Each project demonstrates 
+practical application of programming concepts and software engineering 
+principles."
+
+--------------------------------------------------------------------------------
+SIDEBAR FILTERS (Table of Contents / Filter Panel)
+--------------------------------------------------------------------------------
+Purpose: Filter and categorize portfolio projects
+
+Filter by Status:
+  [All Projects] - Shows all 4 projects (Default active)
+  [Completed] - Shows completed projects (All 4 are completed)
+  [In Progress] - Shows work-in-progress projects
+  [Planned] - Shows planned/future projects
+
+Filter by Category:
+  [Desktop Apps] - Filter desktop applications
+  [Web Apps] - Filter web-based applications
+  [Educational] - Filter educational projects
+
+Action: Clicking a filter link highlights it and filters the project cards
+        based on data-status and data-category attributes
+
+--------------------------------------------------------------------------------
+PROJECT CARDS (Grid Layout - 4 Cards)
+--------------------------------------------------------------------------------
+
+CARD 1: SuperMango
+-------------------
+Project Icon: 🥭
+Status Badge: "Completed" (Green)
+Title: SuperMango
+Description: An AI-powered mobile application that classifies mango diseases 
+through image recognition and provides treatment recommendations.
+
+Technology Tags:
+  - AI/ML
+  - Mobile Dev
+  - Image Recognition
+
+Key Features:
+  • AI disease classification
+  • Image recognition technology
+  • Treatment recommendations
+  • Severity assessment
+
+Action Button: [View Project Details →]
+Destination: project-supermango.html
+
+
+CARD 2: Boost
+--------------
+Project Icon: 🚀
+Status Badge: "Completed" (Green)
+Title: Boost
+Description: A career roadmap generator mobile app that helps users plan 
+their professional journey with AI-powered personalized recommendations.
+
+Technology Tags:
+  - AI/ML
+  - Mobile Dev
+  - Career Tech
+
+Key Features:
+  • AI-generated career roadmaps
+  • Personalized recommendations
+  • Interactive milestone tracking
+  • Skills assessment
+
+Action Button: [View Project Details →]
+Destination: project-boost.html
+
+
+CARD 3: Length Conversion Calculator
+-------------------------------------
+Project Icon: 📏
+Status Badge: "Completed" (Green)
+Title: Length Conversion Calculator
+Description: A PHP-based web application for converting between various 
+length units with a clean, user-friendly interface.
+
+Technology Tags:
+  - PHP
+  - HTML5
+  - CSS3
+
+Key Features:
+  • Multiple unit conversions
+  • Real-time calculations
+  • Clean web interface
+  • Accurate conversion logic
+
+Action Button: [View Project Details →]
+Destination: project-length-calculator.html
+
+
+CARD 4: WeatherEase
+-------------------
+Project Icon: 🌤️
+Status Badge: "Completed" (Green)
+Title: WeatherEase
+Description: A Python desktop application using Tkinter that provides 
+real-time weather data and 5-day forecasts for any city worldwide.
+
+Technology Tags:
+  - Python
+  - Tkinter
+  - API
+
+Key Features:
+  • Real-time weather data
+  • 5-day forecast
+  • City search functionality
+  • API integration
+
+Action Button: [View Project Details →]
+Destination: project-weather-forecast.html
+
+--------------------------------------------------------------------------------
+PROJECT SUMMARY SECTION
+--------------------------------------------------------------------------------
+Purpose: Display portfolio statistics at a glance
+Location: Below project cards
+
+Summary Statistics:
+  - Total Projects: 4
+  - Status Breakdown: 4 Completed, 0 In Progress, 0 Planned
+  - Technology Diversity: Multiple languages and frameworks
+
+================================================================================
+4. PROJECT PAGES - DETAILED DOCUMENTATION
+================================================================================
+
+================================================================================
+4.1 SUPERMANGO: AI-POWERED SEVERITY CLASSIFICATION TOOL
+================================================================================
+File: project-supermango.html
+Full Title: SuperMango: AI-Powered Severity Classification Tool
+
+BREADCRUMB NAVIGATION:
+----------------------
+Portfolio / SuperMango
+- "Portfolio" links back to portfolio.html
+- "SuperMango" indicates current page
+
+PROJECT HEADER (Hero Section):
+-------------------------------
+Project Logo: supermango-logo.png (200px max-width, centered)
+Title: SuperMango: AI-Powered Severity Classification Tool
+
+Badge Pills:
+  [Mobile App] [AI/ML] [Computer Vision] [Completed]
+  - First 3 badges: Technology indicators (gray pills)
+  - Last badge: Status indicator (green pill for completed)
+
+Description: "An intelligent mobile application that uses AI and computer 
+vision to classify the severity of mango diseases, helping farmers detect 
+and treat crop issues early for better harvest outcomes."
+
+--------------------------------------------------------------------------------
+SIDEBAR NAVIGATION (On This Page)
+--------------------------------------------------------------------------------
+Purpose: Quick jump links to page sections
+Links:
+  - Overview → #overview
+  - Features → #features
+  - Interactive Demo → #demo
+
+Action: Smooth scroll to corresponding section anchor
+
+--------------------------------------------------------------------------------
+SECTION 1: PROJECT OVERVIEW
+--------------------------------------------------------------------------------
+Content: Detailed explanation of SuperMango's purpose and innovation
+
+Project Statistics (Info Grid - 4 Cards):
+  📅 Duration: 4 months (Jul - Oct 2024)
+  👥 Team Size: Team of 4
+  🎯 Purpose: Agricultural Innovation
+  🏆 Achievement: Hackathon Winner
+
+Purpose: Quick reference information about project scope and success
+
+--------------------------------------------------------------------------------
+SECTION 2: KEY FEATURES & FUNCTIONS
+--------------------------------------------------------------------------------
+Feature Cards (Interactive hover effects):
+
+FEATURE 1: AI-Powered Image Recognition 🤖
+Details:
+  • Capture or upload photos of mango leaves/fruits
+  • Real-time disease detection using computer vision
+  • Trained on thousands of mango disease images
+  • High accuracy classification (95%+ accuracy)
+  • Works offline after initial model download
+
+FEATURE 2: Severity Classification 📊
+Details:
+  • Classifies disease severity: Mild, Moderate, Severe
+  • Detailed analysis of affected areas
+  • Percentage of damage estimation
+  • Disease progression tracking over time
+  • Early warning system for rapid spread
+
+FEATURE 3: Treatment Recommendations 💊
+Details:
+  • Personalized treatment suggestions
+  • Organic and chemical treatment options
+  • Step-by-step application instructions
+  • Preventive measures and best practices
+  • Cost-effective solution recommendations
+
+FEATURE 4: Historical Records & Analytics 📈
+Details:
+  • Save and track previous diagnoses
+  • View disease trends in your farm
+  • Compare before/after treatment photos
+  • Generate health reports for crops
+  • Export data for analysis
+
+FEATURE 5: Multi-language Support 🌍
+Details:
+  • Available in multiple regional languages
+  • Accessible to diverse farming communities
+  • Voice input support for hands-free operation
+  • Audio instructions for treatment
+  • Cultural context adaptation
+
+FEATURE 6: Community Features 👥
+Details:
+  • Connect with agricultural experts
+  • Share experiences with other farmers
+  • Access regional disease alerts
+  • Receive notifications for outbreaks
+  • Collaborative problem-solving platform
+
+--------------------------------------------------------------------------------
+SECTION 3: INTERACTIVE DEMO / MEDIA
+--------------------------------------------------------------------------------
+Content: Application screenshots and demonstration videos
+- Mockup gallery displaying mobile app interfaces
+- Demo video showing app functionality
+- Visual demonstrations of disease classification
+
+--------------------------------------------------------------------------------
+BOTTOM NAVIGATION
+--------------------------------------------------------------------------------
+Purpose: Navigate between projects sequentially
+
+Buttons:
+  [← Previous: WeatherEase] - Links to project-weather-forecast.html
+  [Back to Portfolio] - Links to portfolio.html
+  [Next: Boost →] - Links to project-boost.html
+
+Action: Quick project-to-project navigation without returning to main portfolio
+
+================================================================================
+4.2 BOOST: CAREER ROADMAP GENERATOR
+================================================================================
+File: project-boost.html
+Full Title: Boost: Career Roadmap Generator
+
+BREADCRUMB NAVIGATION:
+----------------------
+Portfolio / Boost
+- "Portfolio" links back to portfolio.html
+- "Boost" indicates current page
+
+PROJECT HEADER (Hero Section):
+-------------------------------
+Project Logo: boost-logo.png (200px max-width, centered)
+Title: Boost: Career Roadmap Generator
+
+Badge Pills:
+  [Mobile App] [AI/ML] [Career Development] [Completed]
+  - Technology badges (gray pills)
+  - Status badge (green pill)
+
+Description: "An intelligent mobile application that creates personalized 
+career roadmaps based on your skills, interests, and goals. Get step-by-step 
+guidance, resource recommendations, and track your progress towards your 
+dream career."
+
+--------------------------------------------------------------------------------
+SIDEBAR NAVIGATION (On This Page)
+--------------------------------------------------------------------------------
+Links:
+  - Overview → #overview
+  - Features → #features
+  - Live Demo → #demo
+
+--------------------------------------------------------------------------------
+SECTION 1: PROJECT OVERVIEW
+--------------------------------------------------------------------------------
+Content: Explains Boost's mission to help with career planning
+
+Project Statistics (Info Grid - 4 Cards):
+  📅 Timeline: Aug 2024 - Present
+  👥 Team: Team of 3
+  🎯 Goal: Career Guidance Platform
+  📊 Progress: 70% Complete
+
+Project Highlights Box:
+"Why This Project?" - Explains the motivation behind creating Boost and 
+the problem it solves for students and professionals navigating career paths.
+
+--------------------------------------------------------------------------------
+SECTION 2: KEY FEATURES & FUNCTIONS
+--------------------------------------------------------------------------------
+
+FEATURE 1: AI-Powered Roadmap Generation 🎯
+Details:
+  • Input your current skills and career goals
+  • AI generates personalized learning paths
+  • Realistic timelines and milestones
+  • Adaptive roadmaps based on progress
+  • Multiple career track options
+
+FEATURE 2: Resource Recommendations 📚
+Details:
+  • Curated learning materials
+  • Online courses and certifications
+  • Books, articles, and tutorials
+  • Practice projects and challenges
+  • Community-vetted resources
+
+FEATURE 3: Progress Tracking 📊
+Details:
+  • Visual milestone completion
+  • Skill mastery indicators
+  • Time tracking and analytics
+  • Achievement badges and rewards
+  • Progress reports and insights
+
+FEATURE 4: Skill Assessment 🎓
+Details:
+  • Evaluate current skill levels
+  • Identify knowledge gaps
+  • Personalized learning recommendations
+  • Regular skill assessments
+  • Compare with industry standards
+
+FEATURE 5: Mentor Connection 👥
+Details:
+  • Connect with industry professionals
+  • Schedule mentorship sessions
+  • Get career advice and guidance
+  • Networking opportunities
+  • Community support forums
+
+FEATURE 6: Goal Setting & Planning 🗓️
+Details:
+  • Set short-term and long-term goals
+  • Break down complex objectives
+  • Priority management tools
+  • Deadline reminders
+  • Goal achievement celebrations
+
+--------------------------------------------------------------------------------
+SECTION 3: LIVE DEMO / MEDIA
+--------------------------------------------------------------------------------
+Content: Application mockups and interactive demonstrations
+- Mobile app interface screenshots
+- Demo video of roadmap generation
+- User journey visualizations
+
+--------------------------------------------------------------------------------
+BOTTOM NAVIGATION
+--------------------------------------------------------------------------------
+Buttons:
+  [← Previous: SuperMango] - Links to project-supermango.html
+  [Back to Portfolio] - Links to portfolio.html
+  [Next: Length Conversion Calculator →] - Links to project-length-calculator.html
+
+================================================================================
+4.3 LENGTH CONVERSION CALCULATOR
+================================================================================
+File: project-length-calculator.html
+Full Title: Length Conversion Calculator
+
+BREADCRUMB NAVIGATION:
+----------------------
+Portfolio / Length Conversion Calculator
+- "Portfolio" links back to portfolio.html
+- "Length Conversion Calculator" indicates current page
+
+PROJECT HEADER (Hero Section):
+-------------------------------
+Title: Length Conversion Calculator
+
+Badge Pills:
+  [Web App] [PHP] [HTML/CSS] [Completed]
+  - Technology badges (gray pills)
+  - Status badge (green pill)
+
+Description: "A user-friendly web-based calculator that converts between 
+various length units including meters, feet, inches, centimeters, kilometers, 
+and miles. Built with PHP for server-side processing and clean, responsive 
+design."
+
+--------------------------------------------------------------------------------
+SIDEBAR NAVIGATION (On This Page)
+--------------------------------------------------------------------------------
+Links:
+  - Overview → #overview
+  - Features → #features
+  - UI Mockup → #mockup
+
+--------------------------------------------------------------------------------
+SECTION 1: PROJECT OVERVIEW
+--------------------------------------------------------------------------------
+Content: Explains the calculator's practical applications
+
+Project Statistics (Info Grid - 4 Cards):
+  📅 Completion Date: September 2024
+  ⏱️ Duration: 2 weeks
+  🎯 Purpose: Academic Project
+  👥 Team: Individual Project
+
+Project Motivation Box:
+Explains that this was created for a PHP programming course to demonstrate 
+server-side processing, form handling, input validation, and responsive 
+design principles.
+
+--------------------------------------------------------------------------------
+SECTION 2: FEATURES
+--------------------------------------------------------------------------------
+
+FEATURE 1: Multiple Unit Support 📐
+Details:
+  • Meters, kilometers, centimeters, millimeters
+  • Feet, inches, yards, miles
+  • Accurate conversion formulas
+  • Support for decimal values
+  • Bi-directional conversions
+
+FEATURE 2: Real-time Calculation ⚡
+Details:
+  • Instant conversion results
+  • Server-side PHP processing
+  • High precision calculations
+  • Error handling and validation
+  • User-friendly feedback
+
+FEATURE 3: Clean Web Interface 🎨
+Details:
+  • Responsive design for all devices
+  • Intuitive input fields
+  • Clear unit selection dropdowns
+  • Easy-to-read results display
+  • Modern, minimalist design
+
+FEATURE 4: Input Validation ✅
+Details:
+  • Validates numeric input
+  • Handles edge cases gracefully
+  • Prevents invalid conversions
+  • Clear error messages
+  • Sanitized user input
+
+FEATURE 5: Cross-Platform Compatibility 💻
+Details:
+  • Works on all modern browsers
+  • Responsive mobile design
+  • Desktop and tablet optimized
+  • Fast loading times
+  • No JavaScript required
+
+FEATURE 6: Reliable & Secure 🔒
+Details:
+  • Server-side processing for accuracy
+  • No data collection or storage
+  • Privacy-focused design
+  • Clean PHP code architecture
+  • Well-documented codebase
+
+--------------------------------------------------------------------------------
+SECTION 3: UI MOCKUP / APPLICATION SCREENSHOTS
+--------------------------------------------------------------------------------
+Content: Web application interface screenshots
+- Desktop view mockups
+- Mobile responsive designs
+- Conversion process demonstrations
+
+--------------------------------------------------------------------------------
+BOTTOM NAVIGATION
+--------------------------------------------------------------------------------
+Buttons:
+  [← Previous: Boost] - Links to project-boost.html
+  [Back to Portfolio] - Links to portfolio.html
+  [Next: WeatherEase →] - Links to project-weather-forecast.html
+
+================================================================================
+4.4 WEATHEREASE: DESKTOP WEATHER APPLICATION
+================================================================================
+File: project-weather-forecast.html
+Full Title: WeatherEase
+
+BREADCRUMB NAVIGATION:
+----------------------
+Portfolio / WeatherEase
+- "Portfolio" links back to portfolio.html
+- "WeatherEase" indicates current page
+
+PROJECT HEADER (Hero Section):
+-------------------------------
+Title: WeatherEase
+
+Badge Pills:
+  [Desktop App] [Python] [Tkinter] [API Integration] [Completed]
+  - Technology badges (gray pills)
+  - Status badge (green pill)
+
+Description: "A desktop weather application built with Python and Tkinter 
+that provides real-time weather information for any city worldwide. Features 
+current conditions, 5-day forecast, and beautiful visual weather icons."
+
+--------------------------------------------------------------------------------
+SIDEBAR NAVIGATION (On This Page)
+--------------------------------------------------------------------------------
+Links:
+  - Overview → #overview
+  - Features → #features
+  - Live Demo → #demo
+
+--------------------------------------------------------------------------------
+SECTION 1: PROJECT OVERVIEW
+--------------------------------------------------------------------------------
+Content: Details about the Python-based weather application
+
+Project Statistics (Info Grid - 4 Cards):
+  📅 Completion Date: October 2024
+  👥 Team Size: Individual Project
+  🎯 Purpose: Academic Project
+  📊 Status: Completed
+
+Project Philosophy Box:
+Explains that this project demonstrates proficiency in Python GUI development, 
+API integration, and data parsing. Showcases ability to create practical, 
+user-friendly desktop applications.
+
+--------------------------------------------------------------------------------
+SECTION 2: KEY FEATURES & FUNCTIONS
+--------------------------------------------------------------------------------
+
+FEATURE 1: Current Weather Data 🌤️
+Details:
+  • Real-time temperature in Celsius
+  • Weather description (sunny, cloudy, rainy, etc.)
+  • Humidity percentage
+  • Wind speed information
+  • Visual weather icons matching conditions
+  • City name and timestamp
+
+FEATURE 2: 5-Day Forecast 📅
+Details:
+  • Extended weather predictions
+  • Daily high and low temperatures
+  • Forecast conditions for planning
+  • Date-wise weather breakdown
+  • Scrollable forecast display
+
+FEATURE 3: City Search 🔍
+Details:
+  • Search weather for any city worldwide
+  • Instant results with API integration
+  • Error handling for invalid cities
+  • Clean, intuitive search interface
+  • Quick search functionality
+
+FEATURE 4: User Interface 🎨
+Details:
+  • Clean Tkinter GUI design
+  • Organized layout with frames
+  • Responsive button interactions
+  • Professional color scheme
+  • Easy-to-read text labels
+  • User-friendly navigation
+
+FEATURE 5: API Integration 🔌
+Details:
+  • OpenWeatherMap API connection
+  • JSON data parsing
+  • HTTP request handling
+  • Error handling and validation
+  • Secure API key management
+  • Data extraction and display
+
+FEATURE 6: Performance & Reliability ⚡
+Details:
+  • Fast API response times
+  • Exception handling for network errors
+  • Input validation
+  • Graceful error messages
+  • Stable desktop application
+
+--------------------------------------------------------------------------------
+SECTION 3: LIVE DEMO / MEDIA
+--------------------------------------------------------------------------------
+Content: Desktop application screenshots and video demonstrations
+- Application interface screenshots
+- Weather display mockups
+- Demo video showing city search and forecast features
+
+--------------------------------------------------------------------------------
+BOTTOM NAVIGATION
+--------------------------------------------------------------------------------
+Buttons:
+  [← Previous: Length Conversion Calculator] - Links to project-length-calculator.html
+  [Back to Portfolio] - Links to portfolio.html
+  (No "Next" button - this is the last project)
+
+================================================================================
+5. USER INTERFACE COMPONENTS
+================================================================================
+
+COMMON UI ELEMENTS ACROSS ALL PORTFOLIO PAGES:
+-----------------------------------------------
+
+1. HEADER NAVIGATION
+   - Fixed position at top
+   - Brand logo and name (left-aligned)
+   - Hamburger menu toggle (mobile)
+   - Main navigation menu (right-aligned)
+   - Dropdown submenus for Profile and Portfolio
+   - Active page indicator (aria-current="page")
+
+2. BREADCRUMB NAVIGATION
+   - Located at top of hero section
+   - Format: "Portfolio / [Current Project Name]"
+   - Portfolio link returns to main portfolio page
+   - Current page name is plain text (not clickable)
+
+3. PROJECT BRAND/LOGO
+   - Centered above project title
+   - Maximum width: 200px
+   - Border radius: 16px (rounded corners)
+   - Responsive sizing
+
+4. BADGE PILLS (Project Meta)
+   - Technology badges: Gray background, pill-shaped
+   - Status badges: Color-coded (green for completed)
+   - Inline-flex layout with gap spacing
+   - Consistent styling across all projects
+
+5. HERO DESCRIPTION
+   - Subtitle text in muted color
+   - Line height: 1.6 for readability
+   - Positioned below badge pills
+   - Summarizes project in 1-2 sentences
+
+6. SIDEBAR TABLE OF CONTENTS
+   - Sticky positioning (remains visible on scroll)
+   - Quick-jump anchor links to page sections
+   - "On this page" heading
+   - Hover effects on links
+   - Responsive: moves to top on mobile devices
+
+7. SECTION BLOCKS
+   - Content organized in bordered, rounded cards
+   - Panel background color (dark theme)
+   - Box shadow for depth
+   - Consistent padding and spacing
+
+8. INFO GRID (Project Statistics)
+   - 4-column grid on desktop
+   - Auto-fit responsive layout (stacks on mobile)
+   - Icon + label + value format
+   - Emoji icons for visual interest
+
+9. FEATURE CARDS
+   - Icon + title + bulleted list format
+   - Hover effect: slight lift and enhanced shadow
+   - Grid layout with responsive columns
+   - Consistent spacing and typography
+
+10. BOTTOM PROJECT NAVIGATION
+    - Three-button layout: Previous | Back to Portfolio | Next
+    - Sequential project navigation
+    - Centered alignment
+    - Clear directional arrows (← and →)
+
+11. MEDIA CONTAINERS
+    - Screenshots displayed in responsive grids
+    - Videos with 16:9 aspect ratio
+    - Inline playback controls
+    - Rounded corners and borders
+    - Captions below media elements
+
+================================================================================
+6. MENU & SUBMENU INTERACTIONS
+================================================================================
+
+PRIMARY NAVIGATION BEHAVIOR:
+----------------------------
+
+DESKTOP VIEW:
+1. Hover over "Profile" or "Portfolio" menu items
+   → Submenu dropdown appears below
+   → Submenu remains visible while mouse is over menu or dropdown
+
+2. Click submenu item
+   → Navigates to selected page
+   → Submenu closes
+   → Selected page indicated with aria-current="page"
+
+3. Click "Contact" menu item
+   → Navigates to homepage contact section (index.html#contact)
+   → Smooth scroll to contact form
+
+MOBILE VIEW:
+1. Click hamburger menu icon (three horizontal bars)
+   → Full navigation menu slides in or expands
+   → Menu toggle icon changes (animated)
+
+2. Click "Profile" or "Portfolio" text or toggle button
+   → Submenu expands below parent item
+   → Arrow indicator rotates to show expanded state
+   → Aria-expanded attribute changes to "true"
+
+3. Click submenu item
+   → Navigates to selected page
+   → Mobile menu closes automatically
+
+4. Click outside menu or close button
+   → Mobile menu collapses/hides
+
+PORTFOLIO SUBMENU STRUCTURE:
+----------------------------
+Parent: Portfolio (button with aria-haspopup="true")
+
+Submenu Items (5 links):
+1. All Projects (portfolio.html)
+   - Main landing page showing all 4 project cards
+   - Active when on portfolio overview
+
+2. SuperMango (project-supermango.html)
+   - First project in sequence
+   - AI/ML mobile application
+
+3. Boost (project-boost.html)
+   - Second project in sequence
+   - Career guidance mobile app
+
+4. Length Conversion Calculator (project-length-calculator.html)
+   - Third project in sequence
+   - PHP web application
+
+5. WeatherEase (project-weather-forecast.html)
+   - Fourth project in sequence
+   - Python desktop application
+
+NAVIGATION STATES:
+------------------
+- Default: Neutral color, no underline
+- Hover: Highlighted background, lighter text
+- Active (Current Page): aria-current="page" attribute
+  → Bold or distinct styling to indicate current location
+- Focus: Keyboard navigation outline for accessibility
+
+BREADCRUMB NAVIGATION:
+----------------------
+Purpose: Show user's location within site hierarchy
+Format: [Portfolio] / [Current Project Name]
+Interaction:
+  - "Portfolio" text is clickable → returns to portfolio.html
+  - Current project name is plain text (non-clickable)
+
+BOTTOM PROJECT NAVIGATION:
+--------------------------
+Purpose: Allow sequential browsing through projects
+Buttons:
+  - [← Previous: Project Name] - Go to previous project in sequence
+  - [Back to Portfolio] - Return to main portfolio page
+  - [Next: Project Name →] - Go to next project in sequence
+
+Sequence Order:
+1. SuperMango (First - only has "Next")
+2. Boost (Middle - has "Previous" and "Next")
+3. Length Conversion Calculator (Middle - has "Previous" and "Next")
+4. WeatherEase (Last - only has "Previous")
+
+ACCESSIBILITY FEATURES:
+-----------------------
+- Aria labels for screen readers
+- Keyboard navigation support (Tab, Enter, Arrow keys)
+- Focus indicators for keyboard users
+- Semantic HTML structure
+- Alt text for images and logos
+- Aria-expanded for dropdown states
+- Aria-current for active page indication
+
+================================================================================
+TECHNICAL SPECIFICATIONS
+================================================================================
+
+STYLESHEETS LOADED (In Order):
+-------------------------------
+All Portfolio Pages:
+1. Google Fonts: Inter (weights 400, 500, 600, 700) + Playfair Display (600, 700)
+2. global.css - Site-wide styles, colors, typography
+3. page.css - Shared interior page styles (hero, sections, badges, media)
+4. portfolio.css (portfolio.html only) - Portfolio-specific grid and cards
+5. project1.css (SuperMango) - Project 1 specific styles
+6. project2.css (Boost) - Project 2 specific styles
+7. project3.css (Length Calculator) - Project 3 specific styles
+8. project4.css (WeatherEase) - Project 4 specific styles
+
+JAVASCRIPT FILES:
+-----------------
+- main.js - Site-wide functionality (menu toggles, smooth scrolling)
+- portfolio.js (portfolio.html only) - Project filtering and category logic
+- project1.js (SuperMango) - Project-specific interactions
+- (Other project pages may have dedicated JS files as needed)
+
+RESPONSIVE BREAKPOINTS:
+-----------------------
+- Desktop: 960px and above (full layout with sidebar)
+- Tablet: 768px to 959px (adjusted grid, condensed sidebar)
+- Mobile: Below 768px (single column, stacked layout, hamburger menu)
+
+COLOR SCHEME (Dark Theme):
+--------------------------
+- Background: Dark blue-black gradient
+- Text: Light gray to white
+- Accent: Blue (#3b82f6 brand color)
+- Success: Green (#10b981 for completed status)
+- Warning: Orange (#f59e0b for in-progress)
+- Panel backgrounds: Semi-transparent dark cards
+- Borders: Subtle light borders for card separation
+
+TYPOGRAPHY:
+-----------
+- Headings: Playfair Display (serif) - elegant, professional
+- Body Text: Inter (sans-serif) - clean, modern, readable
+- Code/Technical: Monospace fallback when needed
+
+================================================================================
+CONCLUSION
+================================================================================
+
+This documentation provides a complete reference for the Professional 
+Portfolio section of the website, focusing specifically on:
+
+✓ Navigation structure and menu interactions
+✓ Main portfolio page layout and filtering
+✓ Four detailed project pages with complete descriptions
+✓ User interface components and their purposes
+✓ Menu and submenu button actions
+✓ Breadcrumb and bottom navigation systems
+✓ Accessibility features and responsive design
+
+All portfolio pages follow consistent design patterns and navigation 
+structures to provide a cohesive user experience. The documentation focuses 
+on UI elements and navigation actions as requested, omitting backend code 
+implementation details.
+
+For questions or updates, contact: Kyle Robin Andaya
+Website: Professional Portfolio
+Date: November 16, 2025
+
+================================================================================
+END OF DOCUMENTATION
+================================================================================
